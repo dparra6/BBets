@@ -55,6 +55,7 @@ bank[j] = BrLw(35,4.35,637)
 hist(bank)
 ```
 
+After rerunning this we can see this is way too broad of a percentage you either win a ton or lose a ton, there is no real middle. 
 
 ```{r}
 favstats(bank)
@@ -64,9 +65,9 @@ print(sorted[488])
 ```
 
 
+Here we can see where the min of -181.55 of what you can lose and the max you can win is 134.15. 
 
-
-
+We can either win a lot of money or lose a lot more no real middle here. 
 
 
 
@@ -91,6 +92,7 @@ bank[j] = BrLw(35,2,637)}
 hist(bank)
 ```
 
+After running this one a couple of times we can see that you can sit mainly at 200 and not much less than that it will bounce around 200-300. 
 
 
 ```{r}
@@ -100,8 +102,9 @@ print(sorted[12])
 print(sorted[488])
 ```
 
+Here we can see the minimum we can get is 187, where as before with a 4.35 chance we had a min of -150. 
 
-
+Our max is also 367 which is a huge jump, but we can also say this chance would give us a comfortable spot around 187 to 367. 
 
 # In the class and payoff as described what is a 95% confidence interval for Brownlow's earnings?
   
@@ -123,6 +126,9 @@ bank[j]=BrLw(35,2,637)}
 hist(bank)
 ```
 
+Here we changed out of 1000, and we can see that this also has a higher chances of being around the 200-300 as well. 
+
+
 ```{r}
 favstats(bank)
 sorted <- sort(bank)
@@ -130,8 +136,21 @@ print(sorted[25])
 print(sorted[975])
 ```
 
+After changing this out of 1000, we can see our min is 160, and our max is 391 not so different from our second charts. 
+
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
+
+We first had to find out how many people and what kind of percentages we would give for the chances, to figure out the betting and to see the minimum and max we can get for the bets. 
+
+We can see in the first graph with the chances of 4.35, where we go into the negatives if we lose, and don't win much back if we do win. This was a way broader chances that we can just keep loosing and not win much back, the first graphs would be the closest to 0. 
+
+The second graph we can see that if we kept on running it we can see it be more on the 200-300 side, and not very close to zero with the lowest being around 100. 
+On the third graph is where we changed out of 500, we do 1000, and got almost the same results of the second graph where we sit around 200-300, while our lowest being 100. 
+
+Overall the one most likely to keep hitting zero first will most definitely be our first graph just because its always leaning more to the left and not really winning much where as our two other graphs are always leaning more to the right even if we don't win much it does not hit down to zero, like the first graph does. 
+
 
