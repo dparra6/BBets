@@ -73,10 +73,62 @@ print(sorted[488])
 # What size of class makes the 2:1 bet fair?  
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+BrLw(35,2,637)
+```
+
+
+```{r}
+bank=numeric()
+for(j in 1:500){
+
+  
+bank[j] = BrLw(35,2,637)}
+```
+
+
+```{r}
+hist(bank)
+```
+
+
+
+```{r}
+favstats(bank)
+sorted <- sort(bank)
+print(sorted[12])
+print(sorted[488])
+```
+
+
+
 
 # In the class and payoff as described what is a 95% confidence interval for Brownlow's earnings?
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
+
+```{r}
+BrLw(35,2,637)
+```
+
+```{r}
+bank=numeric()
+for(j in 1:1000){
+
+
+bank[j]=BrLw(35,2,637)}
+```
+
+```{r}
+hist(bank)
+```
+
+```{r}
+favstats(bank)
+sorted <- sort(bank)
+print(sorted[25])
+print(sorted[975])
+```
 
 
 # Discussion and Conclusion
