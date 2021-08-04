@@ -41,10 +41,27 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 BrLw(35,4.35,637)
 ```
 
+```{r}
+bank=numeric()
+for(j in 1:500){
+
+  
+bank[j] = BrLw(35,4.35,637)
+}
+```
 
 
+```{r}
+hist(bank)
+```
 
 
+```{r}
+favstats(bank)
+sorted <- sort(bank)
+print(sorted[12])
+print(sorted[488])
+```
 
 
 
